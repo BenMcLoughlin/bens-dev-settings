@@ -1,0 +1,607 @@
+[
+  {
+    "key": "shift+cmd+d",
+    "command": "editor.action.copyLinesDownAction",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+;",
+    "command": "editor.action.clipboardCopyAction",
+    "when": "editorTextFocus",
+    "args": {
+      "snippet": "console.log({${TM_SELECTED_TEXT}$1})"
+    }
+  },
+  {
+    "key": "cmd+r",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+      "snippet": "const $1 = require('$1')"
+    }
+  },
+  {
+    "key": "cmd+m",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+      "snippet": "module.exports ="
+    }
+  },
+  {
+    "key": "cmd+y",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+      "snippet": "background: yellow;"
+    }
+  },
+  {
+    "key": "cmd+u",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+      "snippet": "background: red;"
+    }
+  },
+  {
+    "key": "cmd+t",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+      "snippet": "background: green;"
+    }
+  },
+  {
+    "key": "cmd+h",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+      "snippet": "console.log('hello from file:/$TM_FILENAME')"
+    }
+  },
+  {
+    "key": "cmd+e",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+      "snippet": "import React from 'react';\nimport styled from 'styled-components/native';\nimport { scale } from '../../../utils';\nimport { colors } from '../../../themes/colors';\n\n\nexport const ${TM_FILENAME_BASE} = () => {\nreturn (\n         <Wrapper>\n             <Title>${TM_FILENAME_BASE}</Title>\n         </Wrapper>\n     );\n };\n\n //  ----------------------------STYLES-------------------------------------------//\n\n const Wrapper = styled.View`\n    flex: 1;\n    justify-content: center;\n    align-items: center;\n`;\nconst Title = styled.Text`\n    flex: 1;\n    font-size: 50px;\n`;"
+    }
+  },
+  {
+    "key": "ctrl+r",
+    "command": "code-runner.run"
+  },
+  {
+    "key": "ctrl+alt+n",
+    "command": "-code-runner.run"
+  },
+  {
+    "key": "cmd+g cmd+a",
+    "command": "editor.action.changeAll",
+    "when": "editorTextFocus && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+f2",
+    "command": "-editor.action.changeAll",
+    "when": "editorTextFocus && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+m",
+    "command": "editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  {
+    "key": "f12",
+    "command": "-editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  {
+    "key": "shift+cmd+d",
+    "command": "-workbench.view.debug"
+  },
+  {
+    "key": "ctrl+g",
+    "command": "-workbench.action.gotoLine"
+  },
+  {
+    "key": "cmd+q",
+    "command": "workbench.action.gotoLine"
+  },
+  {
+    "key": "shift+cmd+h",
+    "command": "editor.foldAllBlockComments",
+    "when": "editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "shift+cmd+b",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+      "snippet": "<div style={{ backgroundColor: 'yellow', height: '40px', width: '100px' }}>BANANA</div>"
+    }
+  },
+  {
+    "key": "shift+cmd+c",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+      "snippet": "\n$BLOCK_COMMENT_START* $1 \n* \n *@param \n *@returns \n*$BLOCK_COMMENT_END \n $TM_SELECTED_TEXT \n"
+    }
+  },
+  {
+    "key": "shift+cmd+a",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+      "snippet": "const $1 = () => {\n \n \n}"
+    }
+  },
+  {
+    "key": "shift+cmd+9",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+      "snippet": "import * as u from \"model/utils\""
+    }
+  },
+  {
+    "key": "cmd+k cmd+/",
+    "command": "-editor.foldAllBlockComments",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "alt+cmd+n",
+    "command": "-newFile.createNewFile"
+  },
+  {
+    "key": "ctrl+tab",
+    "command": "-workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"
+  },
+  {
+    "key": "cmd+space",
+    "command": "workbench.action.quickOpenPreviousRecentlyUsedEditor"
+  },
+  {
+    "key": "cmd+n",
+    "command": "newFile.createFromExplorer"
+  },
+  {
+    "key": "cmd+n",
+    "command": "newFile.createNewFile"
+  },
+  {
+    "key": "cmd+right",
+    "command": "workbench.action.debug.stepOver",
+    "when": "debugState == 'stopped'"
+  },
+  {
+    "key": "f10",
+    "command": "-workbench.action.debug.stepOver",
+    "when": "debugState == 'stopped'"
+  },
+  {
+    "key": "cmd+up",
+    "command": "workbench.action.debug.stepOut",
+    "when": "debugState == 'stopped'"
+  },
+  {
+    "key": "shift+f11",
+    "command": "-workbench.action.debug.stepOut",
+    "when": "debugState == 'stopped'"
+  },
+  {
+    "key": "cmd+down",
+    "command": "workbench.action.debug.stepInto",
+    "when": "debugState != 'inactive'"
+  },
+  {
+    "key": "f11",
+    "command": "-workbench.action.debug.stepInto",
+    "when": "debugState != 'inactive'"
+  },
+  {
+    "key": "cmd+right",
+    "command": "workbench.action.debug.start",
+    "when": "debuggersAvailable && debugState == 'inactive'"
+  },
+  {
+    "key": "f5",
+    "command": "-workbench.action.debug.start",
+    "when": "debuggersAvailable && debugState == 'inactive'"
+  },
+  {
+    "key": "f5",
+    "command": "-workbench.action.debug.start",
+    "when": "debuggersAvailable && debugState == 'inactive'"
+  },
+
+  {
+    "key": "cmd+'",
+    "command": "extension.quickGoToSelectedFilePath",
+    "args": {
+      "snippet": "${TM_SELECTED_TEXT}"
+    }
+  },
+  {
+    "key": "cmd+.",
+    "command": "editor.action.insertSnippet",
+    "args": {
+      "snippet": "() => {\n   $1 \n}"
+    }
+  },
+  {
+    "key": "cmd+g cmd+s",
+    "command": "git.stageSelectedRanges"
+  },
+  {
+    "key": "cmd+g cmd+u",
+    "command": "git.unstageSelectedRanges"
+  },
+  {
+    "key": "cmd+q",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+      "snippet": "```\n $1 \n```"
+    }
+  },
+  {
+    "key": "cmd+right",
+    "command": "workbench.action.navigateForward",
+    "when": "canNavigateForward"
+  },
+  {
+    "key": "ctrl+shift+-",
+    "command": "-workbench.action.navigateForward",
+    "when": "canNavigateForward"
+  },
+  {
+    "key": "cmd+left",
+    "command": "workbench.action.navigateBack",
+    "when": "canNavigateBack"
+  },
+  {
+    "key": "ctrl+-",
+    "command": "-workbench.action.navigateBack",
+    "when": "canNavigateBack"
+  },
+  {
+    "key": "cmd+1",
+    "command": "-workbench.action.focusFirstEditorGroup"
+  },
+  {
+    "key": "cmd+2",
+    "command": "-workbench.action.focusSecondEditorGroup"
+  },
+  {
+    "key": "cmd+k cmd+2",
+    "command": "-editor.foldLevel2",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "cmd+k cmd+3",
+    "command": "-editor.foldLevel3",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "cmd+3",
+    "command": "-workbench.action.focusThirdEditorGroup"
+  },
+  {
+    "key": "cmd+k cmd+4",
+    "command": "-editor.foldLevel4",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "cmd+4",
+    "command": "-workbench.action.focusFourthEditorGroup"
+  },
+  {
+    "key": "cmd+k cmd+5",
+    "command": "-editor.foldLevel5",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "cmd+5",
+    "command": "-workbench.action.focusFifthEditorGroup"
+  },
+  {
+    "key": "cmd+k cmd+6",
+    "command": "-editor.foldLevel6",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "cmd+6",
+    "command": "-workbench.action.focusSixthEditorGroup"
+  },
+  {
+    "key": "cmd+k cmd+7",
+    "command": "-editor.foldLevel7",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "cmd+7",
+    "command": "-workbench.action.focusSeventhEditorGroup"
+  },
+  {
+    "key": "cmd+k cmd+8",
+    "command": "-editor.foldAllMarkerRegions",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "cmd+8",
+    "command": "-workbench.action.focusEighthEditorGroup"
+  },
+  {
+    "key": "cmd+k cmd+9",
+    "command": "-editor.unfoldAllMarkerRegions",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "cmd+k",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+      "snippet": "console.log('$1', $1)"
+    }
+  },
+  {
+    "key": "cmd+l",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+      "snippet": "console.log($1)"
+    }
+  },
+  {
+    "key": "cmd+j",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus",
+    "args": {
+      "snippet": "JSON.stringify(${TM_SELECTED_TEXT}$1, null, 4)"
+    }
+  },
+  {
+    "key": "ctrl+cmd+9",
+    "command": "-workbench.action.moveEditorToLastGroup"
+  },
+  {
+    "key": "cmd+9",
+    "command": "-workbench.action.lastEditorInGroup"
+  },
+  {
+    "key": "cmd+k cmd+1",
+    "command": "-editor.foldLevel1",
+    "when": "editorTextFocus && foldingEnabled"
+  },
+  {
+    "key": "ctrl+cmd+1",
+    "command": "-workbench.action.moveEditorToFirstGroup"
+  },
+  {
+    "key": "shift+cmd+1",
+    "command": "-editor.action.replaceOne",
+    "when": "editorFocus && findWidgetVisible"
+  },
+  {
+    "key": "shift+cmd+1",
+    "command": "-search.action.replace",
+    "when": "isEditableItem && matchFocus && replaceActive && searchViewletVisible"
+  },
+  {
+    "key": "shift+cmd+1",
+    "command": "-search.action.replaceAllInFolder",
+    "when": "folderMatchFocus && isEditableItem && replaceActive && searchViewletVisible"
+  },
+  {
+    "key": "shift+cmd+1",
+    "command": "-search.action.replaceAllInFile",
+    "when": "fileMatchFocus && isEditableItem && replaceActive && searchViewletVisible"
+  },
+  {
+    "key": "alt+2",
+    "command": "numberedBookmarks.jumpToBookmark2",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+2",
+    "command": "-numberedBookmarks.jumpToBookmark2",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+l",
+    "command": "numberedBookmarks.listFromAllFiles"
+  },
+  {
+    "key": "shift+alt+c",
+    "command": "numberedBookmarks.clearBookmark",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+1",
+    "command": "numberedBookmarks.jumpToBookmark1",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+1",
+    "command": "-numberedBookmarks.jumpToBookmark1",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+3",
+    "command": "numberedBookmarks.jumpToBookmark3",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+3",
+    "command": "-numberedBookmarks.jumpToBookmark3",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+4",
+    "command": "numberedBookmarks.jumpToBookmark4",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+4",
+    "command": "-numberedBookmarks.jumpToBookmark4",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+5",
+    "command": "numberedBookmarks.jumpToBookmark5",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+5",
+    "command": "-numberedBookmarks.jumpToBookmark5",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+6",
+    "command": "numberedBookmarks.jumpToBookmark6",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+6",
+    "command": "-numberedBookmarks.jumpToBookmark6",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+7",
+    "command": "numberedBookmarks.jumpToBookmark7",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+7",
+    "command": "-numberedBookmarks.jumpToBookmark7",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+8",
+    "command": "numberedBookmarks.jumpToBookmark8",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+8",
+    "command": "-numberedBookmarks.jumpToBookmark8",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+9",
+    "command": "numberedBookmarks.jumpToBookmark9",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+9",
+    "command": "-numberedBookmarks.jumpToBookmark9",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+1",
+    "command": "numberedBookmarks.toggleBookmark1",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+cmd+1",
+    "command": "-numberedBookmarks.toggleBookmark1",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+2",
+    "command": "numberedBookmarks.toggleBookmark2",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+cmd+2",
+    "command": "-numberedBookmarks.toggleBookmark2",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+3",
+    "command": "numberedBookmarks.toggleBookmark3",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+cmd+3",
+    "command": "-numberedBookmarks.toggleBookmark3",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+4",
+    "command": "numberedBookmarks.toggleBookmark4",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+cmd+4",
+    "command": "-numberedBookmarks.toggleBookmark4",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+5",
+    "command": "numberedBookmarks.toggleBookmark5",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+cmd+5",
+    "command": "-numberedBookmarks.toggleBookmark5",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+6",
+    "command": "numberedBookmarks.toggleBookmark6",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+cmd+6",
+    "command": "-numberedBookmarks.toggleBookmark6",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+7",
+    "command": "numberedBookmarks.toggleBookmark7",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+cmd+7",
+    "command": "-numberedBookmarks.toggleBookmark7",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+8",
+    "command": "numberedBookmarks.toggleBookmark8",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+cmd+8",
+    "command": "-numberedBookmarks.toggleBookmark8",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+9",
+    "command": "numberedBookmarks.toggleBookmark9",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+cmd+9",
+    "command": "-numberedBookmarks.toggleBookmark9",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+0",
+    "command": "numberedBookmarks.jumpToBookmark0"
+  },
+  {
+    "key": "shift+alt+0",
+    "command": "numberedBookmarks.toggleBookmark0"
+  },
+  {
+    "key": "shift+alt+c",
+    "command": "numberedBookmarks.clear"
+  },
+  {
+    "key": "shift+alt+c shift+alt+a",
+    "command": "numberedBookmarks.clearFromAllFiles"
+  }
+]

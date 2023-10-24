@@ -1,0 +1,187 @@
+{
+  "workbench.startupEditor": "newUntitledFile",
+  "editor.tokenColorCustomizations": {
+    "[Nord]": {
+      "comments": "#C9E1E2",
+      "keywords": "#E6997E",
+      "strings": "#94c7df",
+      "types": "#AE8FAB",
+      "numbers": "#588CA5",
+      "functions": "#7DA2A9",
+      "variables": "#F5F5F5",
+      "textMateRules": [
+        {
+          "name": "js/ts support.class.component",
+          "scope": "support.class.component",
+          "settings": {
+            "foreground": "#e0c889"
+          }
+        },
+        {
+          "scope": "comment",
+          "settings": {
+            "fontStyle": "italic",
+            "font-weight": "bold"
+          }
+        },
+        {
+          "scope": ["variable", "variable.other.object"],
+          "settings": {
+            "foreground": "#AE8FAB"
+          }
+        },
+        {
+          "scope": ["variable.other"],
+          "settings": {
+            "foreground": "#F5F5F5"
+          }
+        },
+        {
+          "scope": ["variable.parameter"],
+          "settings": {
+            "foreground": "#65A4B8"
+          }
+        }
+      ]
+    }
+  },
+  "search.exclude": {
+    "**/test*": true,
+    "**/spec*": true
+  },
+  "editor.formatOnPaste": false, // required
+  "editor.formatOnType": false, // required
+  "editor.formatOnSaveMode": "file", // required to format on save
+  "files.autoSave": "onFocusChange", // optional but recommended
+  "indentRainbow.colors": ["rgba(82, 85, 95, 0.07)", "rgba(36, 39, 48, 0.07)", "rgba(82, 85, 95, 0.07)", "rgba(36, 39, 48, 0.07)"],
+  "indentRainbow.errorColor": "rgba(36, 39, 48, 0.07)",
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  "javascript.validate.enable": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDragAndDrop": false,
+  "bracket-pair-colorizer-2.colors": ["#f6f5f8", "#70bdc2", "#8BA59B", "#7da2a9"],
+  "code-runner.clearPreviousOutput": true,
+  "terminal.integrated.rendererType": "dom",
+  "emmet.triggerExpansionOnTab": true,
+  "git.enableSmartCommit": true,
+  "editor.minimap.showSlider": "always",
+  "codestream.email": "benmcl@shaw.ca",
+  "codestream.traceLevel": "debug",
+  "workbench.colorTheme": "Nord",
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 5,
+  "html.format.enable": false,
+  "html.format.preserveNewLines": false,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "todo-tree.tree.showScanModeButton": false,
+  "workbench.colorCustomizations": {
+    "list.inactiveSelectionBackground": "#454850",
+    "terminal.background": "#2E3440",
+    "terminal.foreground": "#94c7df",
+    "terminal.ansiBlack": "#1D2021",
+    "terminal.ansiBrightBlack": "#665C54",
+    "terminal.ansiBrightBlue": "#0D6678",
+    "terminal.ansiBrightCyan": "#8BA59B",
+    "terminal.ansiBrightGreen": "#A8BC91",
+    "terminal.ansiBrightMagenta": "#8F4673",
+    "terminal.ansiBrightRed": "#B3666C",
+    "terminal.ansiBrightWhite": "#FDF4C1",
+    "terminal.ansiBrightYellow": "#FAC03B",
+    "terminal.ansiCyan": "#8BA59B",
+    "terminal.ansiGreen": "#95C085",
+    "terminal.ansiMagenta": "#8F4673",
+    "terminal.ansiRed": "#0D6678",
+    "terminal.ansiWhite": "#A89984",
+    "terminal.ansiYellow": "#7DA2A9",
+    "editorBracketHighlight.foreground1": "#C9E1E2",
+    "editorBracketHighlight.foreground2": "#E6997E",
+    "editorBracketHighlight.foreground3": "#94c7df",
+    "editorBracketHighlight.foreground4": "#AE8FAB",
+    "editorBracketHighlight.foreground5": "#7DA2A9",
+    "editorBracketHighlight.foreground6": "#abb2c0",
+    "editorBracketHighlight.unexpectedBracket.foreground": "#db6165"
+  },
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "terminal.integrated.fontSize": 11,
+  "editor.foldingStrategy": "indentation",
+  "editor.gotoLocation.multipleImplementations": "goto",
+  "workbench.preferredDarkColorTheme": "Nord - Zam",
+  "eslint.alwaysShowStatus": true,
+  "eslint.validate": ["javascript", "javascriptreact", "html", "typescriptreact"],
+  "launch": {
+    "configurations": [],
+    "compounds": []
+  },
+  "notebook.kernelProviderAssociations": [],
+  "[makefile]": {
+    "editor.insertSpaces": false
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "nasc-touchbar.blockComment": true,
+  "nasc-touchbar.commentLine": true,
+  "nasc-touchbar.copyLineDown": true,
+  "nasc-touchbar.docs": true,
+  "nasc-touchbar.enableCursorsGroup": true,
+  "window.openFilesInNewWindow": "default",
+  "window.newWindowDimensions": "fullscreen",
+  "window.openFoldersInNewWindow": "on",
+  "window.openWithoutArgumentsInNewWindow": "on",
+  "window.restoreFullscreen": true,
+  "bracket-pair-colorizer-2.activeScopeCSS": ["borderStyle : solid", "borderWidth : 1px", "borderColor : {color}", "opacity: 0.5"],
+  "explorer.decorations.badges": false,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingEmptyBraces": false,
+  "prettier.printWidth": 140,
+  "prettier.semi": false,
+  "workbench.editor.decorations.colors": false,
+  "editor.hover.above": false,
+  "editor.hideCursorInOverviewRuler": true,
+  "markdown.preview.openMarkdownPreview": "never",
+  "markdown.preview.doubleClickToSwitchToEditor": false,
+  "markdown.preview.linkify": false,
+  "markdown.preview.scrollEditorWithPreview": false,
+  "markdown.preview.scrollPreviewWithEditor": false,
+  "markdown.preview.openMarkdownLinks": "inEditor",
+  "markdown.preview.markEditorSelection": false,
+  "git.autofetch": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.guides.indentation": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.codeLens": true,
+  "svelte.ask-to-enable-ts-plugin": false,
+  "svelte.plugin.svelte.useNewTransformation": false,
+  "svelte.plugin.svelte.note-new-transformation": false,
+  "workbench.trustedDomains.promptInTrustedWorkspace": true,
+  "editor.semanticHighlighting.enabled": false,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": true,
+    "markdown": false,
+    "javascript": true
+  },
+  "wallaby.alwaysOpenLocalWallabyAppUrl": true,
+  "wallaby.codeLensFeature.runTest": true,
+  "quokka.automaticRestart": true,
+  "workbench.editor.showTabs": false,
+  "githubPullRequests.pullBranch": "never",
+  "totalTypeScript.hideAllTips": true,
+  "totalTypeScript.hideBasicTips": true,
+  "debug.allowBreakpointsEverywhere": true,
+  "debug.javascript.autoAttachFilter": "always",
+  "workbench.editor.revealIfOpen": false,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "Notes.notesLocation": "/Users/benmcloughlin/Documents Local/Development/Dev notes",
+  "workbench.preferredHighContrastColorTheme": "Nord Dark Pro (C++ only)",
+  "notebook.formatOnSave.enabled": true,
+  "editor.formatOnSave": true,
+  "githubPullRequests.terminalLinksHandler": "github",
+  "markdown.math.enabled": false,
+  "workbench.editor.enablePreview": false,
+  "window.zoomLevel": -1
+}
